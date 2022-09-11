@@ -8,20 +8,35 @@
   </head>
   <body>
     <header>
-      <div class="timer-count">Timer: 75</div>
-      <div class="highscores">View highscores</div>
-      <button class="start-button">Start quiz</button>
-
+      <div class="timer-display">Timer: 50</div>
     </header>
 
     <main>
       <section>
     
-          <div class="questions">Question</div>
+         <div class="questions">Question</div>
+         <label id ="label" for="input" style="display: none">Input your intials to add to scores below:</label>
+         <input type="text" id= "input" class="input" style="display: none">  <br>
+         <ul id="ScoreList"> </ul>
+         <div id="group1" style ="display: none">
           <button id="option1" class="options"> Option1</button>
           <button id="option2" class="options"> Option2</button>
           <button id="option3" class="options"> Option3</button>
           <button id="option4" class="options"> Option4</button>
+        </div>
+        <div id="group2" style="display: none">
+          <button id="option01" class="options"> Option1</button>
+          <button id="option02" class="options"> Option2</button>
+          <button id="option03" class="options"> Option3</button>
+          <button id="option04" class="options"> Option4</button>
+         </div>
+         <div id ="group3" style="display: none">
+          <button id="option001" class="options"> Option1</button>
+          <button id="option002" class="options"> Option2</button>
+          <button id="option003" class="options"> Option3</button>
+          <button id="option004" class="options"> Option4</button>
+          </div>
+
           <div id="outcome" class="outcome"></div>
    
       </section>
